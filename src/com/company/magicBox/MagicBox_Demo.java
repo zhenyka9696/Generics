@@ -6,7 +6,9 @@ import java.util.Arrays;
 import java.util.List;
 
 public class MagicBox_Demo {
+
     public static void main(String[] args) {
+        /*
         MagicBox magicBox=new MagicBox();
         magicBox.setObject(0);
         magicBox.setObject(LocalDate.now());
@@ -24,6 +26,13 @@ magicBoxInteger.setObject(1);
         MagicBoxGeneric<List<String>> magicBoxGeneric2 = new MagicBoxGeneric<>();
         magicBoxGeneric2.setObject(Arrays.asList("hocus", "pocus", "spell"));
         System.out.println(magicBoxGeneric2.getObject());
+    */
+
+MagicBoxPair<Integer, String> magicBoxPair=
+        new MagicBoxPair<>(1,"s");
+        System.out.println(magicBoxPair.getFirst());
+
+        //Pair<Integer,String> pair=new Pair<>;
     }
 }
 
